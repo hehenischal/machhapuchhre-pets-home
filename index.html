@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machhapuchhre Pets Home | Pokhara</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #2D3E50; /* Deep Slate */
+            --accent-color: #FF7E67;  /* Warm Coral */
+            --bg-light: #F9F7F2;      /* Off-white Cream */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--primary-color);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #eee;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 0;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            border-radius: 0 0 50px 50px;
+        }
+
+        /* Card Styling */
+        .pet-card {
+            border: none;
+            border-radius: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .pet-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        /* Buttons */
+        .btn-custom {
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 50px;
+            padding: 12px 30px;
+            font-weight: 600;
+            border: none;
+            transition: 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: #e66d58;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            border-radius: 50px;
+            padding: 12px 30px;
+            font-weight: 600;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">🐾 Machhapuchhre Pets</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Our Pets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero text-center d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4">Pure Joy, Healthy Tails.</h1>
+            <p class="lead mb-5">Pokhara's premium pet farm. Ethical breeding, happy lives.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="tel:+977061XXXXXX" class="btn btn-custom btn-lg"><i class="fas fa-phone"></i> Call Now</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill">Visit Shop</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=80" alt="Dog" class="img-fluid rounded-pill shadow">
+                </div>
+                <div class="col-md-6 ps-md-5">
+                    <h2 class="mb-4">Why Choose Machhapuchhre Pets?</h2>
+                    <p>Located in the heart of Pokhara, we aren't just a shop; we are a dedicated farm. We believe every pet deserves a healthy start in life.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle text-success me-2"></i> Locally Raised with Love</li>
+                        <li><i class="fas fa-check-circle text-success me-2"></i> Veterinary Checked & Vaccinated</li>
+                        <li><i class="fas fa-check-circle text-success me-2"></i> Lifelong Support for Pet Owners</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Furry Friends</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card pet-card h-100">
+                        <img src="https://images.unsplash.com/photo-1633722715463-d30f4f325e24?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Golden Retriever">
+                        <div class="card-body text-center">
+                            <h3>Golden Retrievers</h3>
+                            <p class="text-muted">Friendly, loyal, and perfect for families.</p>
+                            <a href="#" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card pet-card h-100">
+                        <img src="https://plus.unsplash.com/premium_photo-1702555824504-0f99fcfdae5d?q=80&w=2321&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Cat">
+                        <div class="card-body text-center">
+                            <h3>Spitz</h3>
+                            <p class="text-muted">
+                            Playful, intelligent, and great companions.
+                            </p>
+                            <a href="#" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card pet-card h-100">
+                        <img src="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Rabbit">
+                        <div class="card-body text-center">
+                            <h3>Holland Lops</h3>
+                            <p class="text-muted">Sweet, small, and very easy to care for.</p>
+                            <a href="#" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="contact-info shadow-sm">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <i class="fas fa-map-marker-alt fa-3x text-accent mb-3" style="color: var(--accent-color);"></i>
+                        <h4>Visit Us</h4>
+                        <p> Pokhara, Nepal</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-phone-alt fa-3x mb-3" style="color: var(--accent-color);"></i>
+                        <h4>Call Us</h4>
+                        <p>+977-98XXXXXXXX<br>+977-061-XXXXXX</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-clock fa-3x mb-3" style="color: var(--accent-color);"></i>
+                        <h4>Opening Hours</h4>
+                        <p>Sun - Fri: 9:00 AM - 7:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center">
+        <p class="mb-0">&copy; 2026 Machhapuchhre Pets Home. All Rights Reserved.</p>
+        <div class="mt-2">
+            <a href="#" class="text-dark me-3"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-dark"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
